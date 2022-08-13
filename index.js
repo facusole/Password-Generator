@@ -1,6 +1,7 @@
 const asciiString = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`~!@#$%^&*=+?' 
 
 const passwordGen = () => {
+    // Logica de funcion
     let password = ''
     let passwordLength = Math.floor((Math.random() * 10) + 10)
 
@@ -8,8 +9,10 @@ const passwordGen = () => {
         password += asciiString[Math.floor(Math.random() * 64)]
     }
 
+    // Mostrar en navegador resultado
     const node = document.createElement('li')
     const passwordGenerated = document.createTextNode('Your password is: ' + password)
+    
     node.appendChild(passwordGenerated)
     document.getElementById('password_Text_inactive').appendChild(node)
     document.getElementById('password_Text_inactive').id = 'password_Text_active'
