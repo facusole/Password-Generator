@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/*------------------ Set to 0 all margins and paddings + font family ------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Shadows Into Lights', cursive;
+    cursor: url(icons/cursor.png), auto;
+}
+
+/*------------------ General stylings ------------------*/
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60rem;
+}
+
+#password_Text, button {
+    width: 95%;
+}
+
+/*------------------ Card element, it contains the components ------------------*/
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/*------------------ UL, child of .card ------------------*/
+
+#password_Text_inactive {
+    margin-top: 1rem;
+    list-style: none;
+    background-color: white;
+}
+
+#password_Text_active {
+    border: 3px solid black;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 91%;
+    font-size: 1.5rem;
+}
+
+/*------------------ li, child of #password_Text_active ------------------*/
+
+li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+ /*------------------ Buttons, child of .card ------------------*/
+
+button {
+    border: 3px solid black;
+    font-size: bold;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: hsl(229, 100%, 60%);
+    color: white;
+}
+
+.clear {
+    margin-top: 1rem;
+    background-color: hsl(34, 100%, 47%);
+    color: black;
+}
+
