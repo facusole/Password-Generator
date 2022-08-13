@@ -81,3 +81,30 @@ sub {
     margin-top: .5rem;
 }
 
+ /*------------------ Media queries ------------------*/
+
+ @media (max-width: 400px ) {
+    .container {
+       width: 100vw;
+    }
+
+    #password_Text_active {
+        width: 70%;
+        margin-inline: .5rem;
+    }
+
+    sub {
+        width: 95%;
+    }
+ }
+
+ @media (max-width: 900px) {
+    .container {
+        width: 100vw;
+    }
+
+    #password_Text_active {
+        width: 89%;
+    }
+
+ }
